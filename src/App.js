@@ -4,6 +4,8 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificate from './components/Certificate';
 import Habilidades from './components/Habilidades';
+import { h1, h2 } from 'react/lib/ReactDOMFactories';
+import formulario from './components/formulario';
 
 
 
@@ -42,7 +44,9 @@ class App extends Component {
       ],
       certificate: [
         {name: 'PRESENTACION GENERAL', description: '¡Hola! tengo 20 años, soy desarrollador web,tecnico en reparaciones,comerciante apasionado por la tecnologia y la programación. Me caracterizo por ser una persona responsable, brindando soluciones tecnológicas óptimas, he resuelto mas de 100 problemas a diferentes dispositivos tecnologicos . Reconociendo y plasmando satisfactoriamente las necesidades de mis clientes, permitiendo que tanto personas como empresas nos contraten para desarrollo web y soporte tecnologico. Dame la oportunidad de brindar diferentes servicios tecnologicos.' },
-        {name: 'Contacto'},
+        {name: 'Habilidades', description: '-Reconozco claramente cuales son los lenguajes de programación básicos para la realización de una página web de calidad.'},
+        {description: '-Mantengo una imagen de marca buena reconociendo los colores y el diseño que debe llevar la página.'},
+        { description: '-curiosidad hasta que no soluciono problemas con los códigos no detengo mi trabajo. Manejo de las bases de datos phpmyadmin' },
       ],
       Habilidades: [
         {name: 'HTML5', percentage: '95%'},
@@ -53,7 +57,12 @@ class App extends Component {
         
       ],
 
+      
+
     };
+
+
+  
 
     
 
@@ -77,6 +86,7 @@ class App extends Component {
                 <Education education={person.education} />
                 <Certificate certificate={person.certificate} />
                 <Habilidades Habilidades={person.Habilidades} />
+         
               </div>
           </div>
 
