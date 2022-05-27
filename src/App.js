@@ -4,7 +4,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificate from './components/Certificate';
 import Habilidades from './components/Habilidades';
-import form from './components/formulario';
+
 
 
 
@@ -27,6 +27,8 @@ class App extends Component {
       profession: 'Ingeniero en sistemas',
       bio: 'Ingeniero en sistemas y telecomunicaciones,estoy desarrolllando las competencias necesarias para satisfacer las necesidades de implementación de soluciones informáticas para el mundo del comercio electrónico velando, además, por su formación en cuanto a su sentido ético y su calidad humana.',
       address: 'Manizales,Caldas',
+      proyecto : 
+        { description: 'Nuestro proyecto es una gran empresa que brinda diferentes servicios a nuestros clientes, todo lo relacionado con tecnologia venta de accesorios,computadores,celulares,soporte tecnico,cuentas de entretenimiento' },
       social: [
         {name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100004720744822'},
         {name: 'twitter', url: 'https://twitter.com/taba'},
@@ -55,12 +57,8 @@ class App extends Component {
 
         
       ],
-      form: [
-        { description: 'Nuestro proyecto es una gran empresa que brinda diferentes servicios a nuestros clientes, todo lo relacionado con tecnologia venta de accesorios,computadores,celulares,soporte tecnico,cuentas de entretenimiento' },
-   
-
-        
-      ]
+      
+  
 
       
 
@@ -82,7 +80,9 @@ class App extends Component {
               profession={person.profession}
               bio={person.bio}
               address={person.address}
-              social={person.social} />
+              social={person.social}
+              form={person.form} />
+
               
           </div>
 
@@ -92,7 +92,7 @@ class App extends Component {
                 <Education education={person.education} />
                 <Certificate certificate={person.certificate} />
                 <Habilidades Habilidades={person.Habilidades} />
-                <formulario form={person.form} />
+               
          
               </div>
           </div>
