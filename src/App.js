@@ -5,8 +5,20 @@ import Education from './components/Education';
 import Certificate from './components/Certificate';
 import Habilidades from './components/Habilidades';
 
+
+
+
+
+
+
 class App extends Component {
+
+
+  
+
   render() {
+
+    
 
     const person = {
       avatar: 'https://umedia.umanizales.edu.co/wp-content/uploads/2021/10/Juan_Camilo_Tabares-300x225.jpeg',
@@ -16,7 +28,7 @@ class App extends Component {
       address: 'Manizales,Caldas',
       social: [
         {name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100004720744822'},
-        {name: 'twitter', url: 'https://twitter.com/gndx'},
+        {name: 'twitter', url: 'https://twitter.com/taba'},
         {name: 'github', url: 'https://github.com/CAMILOTABA'},
  
       ],
@@ -30,16 +42,23 @@ class App extends Component {
       ],
       certificate: [
         {name: 'PRESENTACION GENERAL', description: '¡Hola! tengo 20 años, soy desarrollador web,tecnico en reparaciones,comerciante apasionado por la tecnologia y la programación. Me caracterizo por ser una persona responsable, brindando soluciones tecnológicas óptimas, he resuelto mas de 100 problemas a diferentes dispositivos tecnologicos . Reconociendo y plasmando satisfactoriamente las necesidades de mis clientes, permitiendo que tanto personas como empresas nos contraten para desarrollo web y soporte tecnologico. Dame la oportunidad de brindar diferentes servicios tecnologicos.' },
+        {name: 'Contacto'},
       ],
       Habilidades: [
         {name: 'HTML5', percentage: '95%'},
         {name: 'CSS', percentage: '90%'},
         {name: 'JavaScript', percentage: '75%'},
         {name: 'PHP', percentage: '50%'}
-      ]
+
+        
+      ],
+
     };
 
+    
+
     return (
+      
       <header>
         <div className='wrapper'>
           <div className='sidebar'>
@@ -61,7 +80,13 @@ class App extends Component {
               </div>
           </div>
 
+          
+
+         
+        
+
         </div>
+        
       </header>
     );
   }
