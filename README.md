@@ -1,4 +1,4 @@
-# gresume-react
+# USO DE APP CAMILO TABARES
 Professional CV Luis Camilo Tabares Puerta in ReactJS
 
 GResume is a HTML free template to create a minimalist professional resume. Made in html5 and css3 with a responsive design.
