@@ -57,7 +57,9 @@ class App extends Component {
         {name: 'HTML5', percentage: '95%'},
         {name: 'CSS', percentage: '90%'},
         {name: 'JavaScript', percentage: '75%'},
-        {name: 'PHP', percentage: '50%'}
+        {name: 'PHP', percentage: '50%'},
+        {name: 'Psd', percentage: '50%'},
+        {name: 'Ilustrator', percentage: '50%'},
 
         
       ],
