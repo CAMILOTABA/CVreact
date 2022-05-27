@@ -12,6 +12,9 @@ import Habilidades from './components/Habilidades';
 
 
 
+
+
+
 class App extends Component {
 
 
@@ -27,16 +30,16 @@ class App extends Component {
       profession: 'Ingeniero en sistemas',
       bio: 'Ingeniero en sistemas y telecomunicaciones,estoy desarrolllando las competencias necesarias para satisfacer las necesidades de implementación de soluciones informáticas para el mundo del comercio electrónico velando, además, por su formación en cuanto a su sentido ético y su calidad humana.',
       address: 'Manizales,Caldas',
-      proyecto : 
-        { description: 'Nuestro proyecto es una gran empresa que brinda diferentes servicios a nuestros clientes, todo lo relacionado con tecnologia venta de accesorios,computadores,celulares,soporte tecnico,cuentas de entretenimiento' },
+      
       social: [
         {name: 'facebook', url: 'https://www.facebook.com/profile.php?id=100004720744822'},
         {name: 'twitter', url: 'https://twitter.com/taba'},
         {name: 'github', url: 'https://github.com/CAMILOTABA'},
- 
+
       ],
       experience: [
         {jobTitle: 'Desarrollador', company: 'Cetanix', startDate: '2022', endDate: 'Presente', jobDescription: 'Desarrollamos un proyecto con los lenguajes javascript-css-html5-php, el sistema registraba al usuario y inicia sesion donde le daba un código Qr para un programa del smartphone que por cuestiones de tiempo no logramos desarrollar además de esto el usuario en la página podia eliminar sus datos consultarlos .'},
+        
         
       ],
       education: [
@@ -73,6 +76,7 @@ class App extends Component {
       
       <header>
         <div className='wrapper'>
+        
           <div className='sidebar'>
             <About
               avatar={person.avatar}
@@ -81,7 +85,7 @@ class App extends Component {
               bio={person.bio}
               address={person.address}
               social={person.social}
-              form={person.form} />
+        />
 
               
           </div>
@@ -92,12 +96,37 @@ class App extends Component {
                 <Education education={person.education} />
                 <Certificate certificate={person.certificate} />
                 <Habilidades Habilidades={person.Habilidades} />
+                
+
                
          
               </div>
           </div>
 
-          
+          <div className='content'>
+
+
+            <h1>Contactame</h1>
+
+        <form action="/my-handling-form-page" method="post">
+            <ul>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Correo electrónico:</label>
+                <input type="email" id="mail" name="user_email" />
+              </li>
+              <li>
+                <label for="msg">Mensaje:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </li>
+
+              </ul>    
+        </form>    
+        
+        </div>
 
          
         
@@ -105,6 +134,13 @@ class App extends Component {
         </div>
         
       </header>
+
+
+      
+
+
+
+
     );
   }
 }
