@@ -15,6 +15,7 @@ import Habilidades from './components/Habilidades';
 
 
 
+
 class App extends Component {
 
 
@@ -108,7 +109,9 @@ class App extends Component {
 
             <h1>Contactame</h1>
 
-        <form action="/my-handling-form-page" method="post">
+            <p>Me puedes contacar en las redes sociales o traves de este contacto en modo formulario</p>
+
+        <form className='form' action="/my-handling-form-page" method="post">
             <ul>
               <li>
                 <label for="name">Nombre:</label>
