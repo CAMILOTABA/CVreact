@@ -4,8 +4,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Certificate from './components/Certificate';
 import Habilidades from './components/Habilidades';
-import { h1, h2 } from 'react/lib/ReactDOMFactories';
-import formulario from './components/formulario';
+import form from './components/formulario';
 
 
 
@@ -56,6 +55,12 @@ class App extends Component {
 
         
       ],
+      form: [
+        { description: 'Nuestro proyecto es una gran empresa que brinda diferentes servicios a nuestros clientes, todo lo relacionado con tecnologia venta de accesorios,computadores,celulares,soporte tecnico,cuentas de entretenimiento' },
+   
+
+        
+      ]
 
       
 
@@ -78,6 +83,7 @@ class App extends Component {
               bio={person.bio}
               address={person.address}
               social={person.social} />
+              
           </div>
 
           <div className='content-wrapper'>
@@ -86,6 +92,7 @@ class App extends Component {
                 <Education education={person.education} />
                 <Certificate certificate={person.certificate} />
                 <Habilidades Habilidades={person.Habilidades} />
+                <formulario form={person.form} />
          
               </div>
           </div>

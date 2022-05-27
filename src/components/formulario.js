@@ -1,27 +1,22 @@
 import React from 'react';
 
-
-const formulario = (props) => {
-    const mySkills = (
+const formulario= (props) => {
+    const myExperience = (
       <div>
-        {props.Habilidades.map((skll) =>
-          <div className='item w33' key={skll.name}>
-            <h3>{skll.name}</h3>
-            <div className='Habilidades'>
-              <span style={{width: skll.percentage}}></span>
-            </div>
+        {props.formulario.map((exp) =>
+          <div className='item' key={exp.jobTitle}>
+            <h3>{exp.jobTitle} @ {exp.company} <span>{exp.startDate} - {exp.endDate}</span></h3>
+            <p>{exp.jobDescription}</p>
           </div>
         )}
       </div>
     );
     return (
-      <div className='title'>
-        <i className='fa fa-code'></i>
-        <h2>Habilidades</h2>
-        {mySkills}
-      </div>
+        <textarea>
+        Hello there, this is some text in a text area
+      </textarea>
     )
   };
-  
+
 
 export default formulario;
